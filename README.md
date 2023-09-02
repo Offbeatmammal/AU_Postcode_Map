@@ -1,7 +1,7 @@
 # AU_Postcode_Map
 Display an interactive map of Australian Postcodes
 
-This code is an example of one way to use publicly available data and tools to display an interactive map of Australia showing suburbs for each postcode.
+This code is an example of one way to use publicly available data and tools to display an interactive map of Australia showing suburbs for each postcode. Have a look at it [in action](https://obm.one/map/index.html) (can take a few seconds to load if data isn't currently cached).
 
 Aquire the data
 ===============
@@ -21,8 +21,10 @@ Either in a browser, or from the command line, run `postcodes.php`. The script a
 
 Display the data
 ================
-Inspired by an article by [Luke Singham](https://lukesingham.com/map-of-australia-using-osm-psma-and-shiny/) on this topic (wish I'd found the article sooner, as it would have saved me some deadends. Also shows some good alternative ways to collect and cleanse the data) I decided to go with [Leaflet](https://leafletjs.com).
+Inspired by an article by [Luke Singham](https://lukesingham.com/map-of-australia-using-osm-psma-and-shiny/) on this topic (wish I'd found the article sooner, as it would have saved me some dead-ends! Also shows some good alternative ways to collect and cleanse the data) I decided to go with [Leaflet](https://leafletjs.com).
 
 The `index.html` page contains a div to display the map in, and loads jQuery, leaflet, and [turfjs](https://github.com/Turfjs/turf) scripts.
 
-The `script.js` handles the data loading and display using Leaflet. It assigns random colours to each postcode, and updates the info box with the postcode and suburbs when you mouse over. It includes a (commented out) section (inspired by sample from [Abdurrahman Yildiz](https://github.com/abdurrahmanyildiz/geojson-feature-merger))that demonstrates using Turf to filter the data to only show specific groups of postcodes (updating the properties to keep the info box correct).
+The `script.js` handles the data loading and display using Leaflet. It assigns random colours to each postcode, and updates the info box with the postcode and suburbs when you mouse over.
+
+It includes a (commented out) section (inspired by sample from [Abdurrahman Yildiz](https://github.com/abdurrahmanyildiz/geojson-feature-merger))that demonstrates using Turf to filter the data to only show specific groups of postcodes (updating the properties to keep the info box correct).
