@@ -27,4 +27,4 @@ The `index.html` page contains a div to display the map in, and loads jQuery, le
 
 The `script.js` handles the data loading and display using Leaflet. It assigns random colours to each postcode, and updates the info box with the postcode and suburbs when you mouse over.
 
-It includes a (commented out) section (inspired by sample from [Abdurrahman Yildiz](https://github.com/abdurrahmanyildiz/geojson-feature-merger))that demonstrates using Turf to filter the data to only show specific groups of postcodes (updating the properties to keep the info box correct).
+It includes a (commented out) section (inspired by a sample from [Abdurrahman Yildiz](https://github.com/abdurrahmanyildiz/geojson-feature-merger)) that demonstrates using Turf to filter the data to only show specific groups of postcodes (updating the properties to keep the info box correct).
